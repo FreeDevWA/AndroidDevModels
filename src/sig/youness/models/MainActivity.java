@@ -1,5 +1,8 @@
 package sig.youness.models;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import sig.youness.models.menuview.CircleImageView;
 import sig.youness.models.menuview.CircleLayout;
 import sig.youness.models.menuview.CircleLayout.OnItemClickListener;
@@ -28,6 +31,9 @@ public class MainActivity extends Activity implements OnItemSelectedListener, On
 		CircleLayout circleMenu = (CircleLayout)findViewById(R.id.main_circle);
 		circleMenu.setOnItemSelectedListener(this);
 		circleMenu.setOnItemClickListener(this);
+		AdView mAdView = (AdView) findViewById(R.id.adView1);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 		selectedTextView = (TextView)findViewById(R.id.selected_textView);
 		selectedTextView.setText(((CircleImageView)circleMenu.getSelectedItem()).getName());
 		retrofitactivity.setOnClickListener(new OnClickListener() {
