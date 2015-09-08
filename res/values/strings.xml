@@ -10,6 +10,9 @@
     <string name="wordpress">Wordpress</string>
     <string name="myspace">Myspace</string>
     <string name="start_app">Starting application:</string>
+    <string name="ranklabel">"Rank : "</string>
+    <string name="countrylabel">"Country : "</string>
+    <string name="populationlabel">"Population : "</string>
 	<string name="banner_ad_unit_id">ca-app-pub-2226934841827398/2862283296</string>
     
 

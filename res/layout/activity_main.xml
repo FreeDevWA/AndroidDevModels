@@ -107,4 +107,31 @@
         ads:adUnitId="@string/banner_ad_unit_id">
     </com.google.android.gms.ads.AdView>
 
+    <ImageButton
+        android:id="@+id/imageorm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/calenderButton"
+        android:background="@android:color/transparent"
+        android:src="@drawable/orm" />
+
+    <ImageButton
+        android:id="@+id/imagesnow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageorm"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/snow" />
+
+    <ImageButton
+        android:id="@+id/imagecountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/retofitButton"
+        android:background="@android:color/transparent"
+        android:src="@drawable/country" />
+
 </RelativeLayout>

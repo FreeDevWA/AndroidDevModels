@@ -10,6 +10,7 @@
 	    <!-- Include required permissions for Google Mobile Ads to run-->
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -32,8 +33,21 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
         <activity android:name="sig.youness.models.ListActivity"></activity>
+        <activity android:name="sig.youness.models.PhotoActivity"></activity>
+        <activity android:name="sig.youness.models.grid.ViewImage"></activity>
         <activity android:name="sig.youness.models.SideMenuActivity"></activity>
+        <activity android:name="sig.youness.models.JsoupActivity" ></activity>
+        <activity android:name="sig.youness.models.utils.SingleItemView" ></activity>
         <activity android:name="sig.youness.models.CalenderActivity" ></activity>
-    </application>
+        <activity android:name="sig.youness.models.weather.WeatherActivity"></activity>
+    	<activity android:name="sig.youness.models.ormlite.ORMActivity"></activity>
+    	<activity android:name="sig.youness.models.ormlite.StudentAddActivity"></activity>
+    	<activity android:name="sig.youness.models.ormlite.TeacherAddActivity"></activity>    
+   		<activity android:name="sig.youness.models.ormlite.ViewStudentRecordActivity"></activity>
+   		<activity android:name="sig.youness.models.ormlite.ViewTeacherDetailsActivity"></activity> 
+   		<activity android:name="sig.youness.models.ormlite.ViewTeacherRecordActivity"></activity>
+   		
+   					
+   		</application>
 
 </manifest>
